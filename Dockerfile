@@ -6,7 +6,6 @@ RUN apt-get update
 RUN apt update && \
 	apt install -y python3-pip
 
-COPY package-lock.json .
 COPY package.json .
 RUN npm install
 
